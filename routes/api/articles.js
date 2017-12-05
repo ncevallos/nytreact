@@ -4,7 +4,7 @@ const articlesController = require("../../controllers/articlesController");
 const authKey = "b9f91d369ff59547cd47b931d8cbc56b:0:74623931";
 
 console.log("Included article routes");
-// Matches with "/api/books"
+// Matches with "/api/articles"
 router.route("/")
   .get(articlesController.findAll)
   .post(articlesController.create);
